@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>MRR</title>
+
+</head>
+
+<body>
+    <p>Selamat Datang di Website MRR</p>
+    <script>
+        alert(document.body);
+    </script>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MRR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Portofolio</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMoAAAD5CAMAAABRVVqZAAAAq1BMVEX39/cAAACilGfMzMz////7+/3Jycn6+vrNzc309PT8/PxUVFTT09OkmHGdjl2gkWIsLCzk5OTg3ta6tJuzs7Pv7+9GRkbW1tbj4+Pq6uomJibd3d0xMTE9PT1/f3/j4t1ycnJiYmKqqqqWlpbAwMCNjY1qamqgoKCFhYUQEBAhISGOjo7RzL3Jwq9XV1ekpKSxp4cYGBiZiVS+tp3a18zLxrW1q404ODiqn3rcBCLUAAAXE0lEQVR4nO1d6VbjOhK2sWPZQiSEtuMYQ8gGSVgbuN3w/k82JXmJLZW8ZOl4zqF+zJkbZEmfSrWqpDaMH/qhH/qhH/qhf0WkGf3D0Xbu/K4ZHQbIUYciZ/0m9PHcOwCUoNFQu0MZAPEuBmeVdAAk9KViDDEJPpedoSTkRVfPnxdVaPrP+4tL0Nfi6J99Pl9F3t5DcCKEkrtfVWD2hqJlyqD/9wqGP5Rq4UR60W/twu3PFk/Td//7rndIGAkR+qLFcrHncD0NU/ov9PBAxIDPOiz7ssXTITmEbkSp96mTl/3Y0sP5Pfh7NCRAOij7sUXDlLPDaC2cki2GDDz43mMBe39QpvT/HJMpyfphItP/bw+2nF3cYV0ekymg/38NzgbGN8KX3dnSe/54RqAcV1JAI//XByj/HZQtBEzsldrjIXyISooAikcvVCg7Swsw5U8PgxIdduYqwaQ91MDszBZwRzGuDI7MFKP3PRh4BjkcWwhnCgZlH53YiHp/BRSULVe7rCO56BsYVwa/jw0FVNiAK0mULbR9f+S/D/BOMCi/js6VTwEFl5Yd2AJM8XCu/CsoXFgPIS3AlE96YigHYgu96AfGqblyELakTDkxFNQHbMuW3rdgyqm5grKlnQblTBEfnBgKGsT279qwpff9kXgnp+YKFjC1Ygu5+ki931ND2Zstvd8faetTQ8HZ0jzK2DLl9FDQPFxztvR+521PDgVNxDVmCzDlN83//6mh7MWW3t+PvOXpoaBJ64ZsIXcfW23XASh7sAWYsnUNOgDFCHZVYsCUQnjTBSgUS702STAAUwq5gC5A2Vlaoo+iF90JKGhGvJ4tvV9FpnQDCk+MqWz5rJtG1C/l/rsBhadeVbYEdb18PHcPioYt1ckX+KaksDsCpdeeLfRTOuvvCBSCHShUSwuovfIPHYHCE5bt2AKSIp0CdQVKa7YoTOkMlLZsUZnSHSgatuiUWID00BUoEA+2YAt9UY/juwMFOx45G7zgbPEG6nlpd6C0YUsPmKJg7BCUFmzxMIgdgmJQlC1Iw96fPqIPugQFZQtabTPAIoAuQcGlBdF1f/rYFDsFBWeLWqVy1seqUjsFxeh9q1CU2qHecx8NlrsFpRlbLvDMUreg8OIEhC3lJsAU1G52DApBi3jKIZaGKV2DYvSQsoQSW4hGUroHBWdLQVp6F7pj165BqWMLMOW3xvHvHJQaadEzpXtQqtkCQLUVCt2DomFLenR6oS9+6x4UtLYqLacGmBfaPF8HoeAlb4Itve+KisQOQuHVqQoNOFvI1UdFsXsXoWgLRIEpFcW2XYSCsgWkBeZ6UfVVF6HgtVX/2b/7VZfbOgkFra06+65mSkeh4Nce+pVMOQ0U+gvJyJXIw9iChPlFOg1X/qIpk2IL7IpQzVWn03DlorZAEmNLjXwhHs/xoXiD2tsYCFsGNffPUCg71JK3IX7+UHdmipS81TAFHB41L3Ds6wXCybqoGUSpRKwFj9YuHhmKSELWlhbJbKk7xkdzm0e+6pWUtLRd5PriCszd2e0OSWNK51i7YOUinvqSF/QE8HhXVTmlO6d2mUu1VfW6CL9CrI/UDkB5mVGttBTZUs8U7L7VcXdYb6v9L2q2WKG2qt7Waa5ZH/GKFImKw9Q03rKlvpQS99p4bHAkLEUkAkvlDHO2DPCEd7EpVsGQbs2jbLHelcT+i7vKNctqq2qZ0vulfZHg7Cw6PF+I8aK8TdH/9CoWPGXLQJdbzZoF+nci+B3y/w77ngPpkecLTPOffd71tEMlbKlUQ4Qaf7Ar78X1+nuYxylIr9ejPePq5UyzcoP+958rg1IMkBABjCn8wZ+0489BBUuyIX4/R3yE3l4PBT3/eXn59V39Is2g37/4+/miOv6iiAdhSvQM9AIdX9Q+dZOPcPb78+XlD3y3KxLxUNCgfjj+BA/iLfM7uqqnTq4+kkd/GnRcGkE8FLSri0m+LxoTEl2Qu7MzNbdKrs6a9yrT7q9V9FoQthS4TmjTa4NRfuiHfugIRAil9smIHupJLcBAh5a/mkxntzeXgq5RutRR9V/x3tK/3dy+Ticr3xryWeyLw1uuR6ZEl7cYya1yurm5vr7R/tX8ukFoI7carZfeHmgo9V/LHc5W1lC3D7Bpvvqx+BuJWOj69yhc3baKndWr3BvdDQylKwmHQ239tkWgzMbQHsKDiDmWZbkuC32Fw6YZjvEYjssnWZ6XG692AWM77+Uliav5q0JZ2GKKQ5cDSchlUxWK42jAGHyHx2Uw747dGsm6PKBv12gRBcqaj0kCtgXCKXxQoFiW4+oDX2LPkX7bIJFGtGq/l6Fcii/CMhDOl3epIeM/O6yi52X5g4dWWGxpHyzrv5ahLCmwxJWRWBZbSA1BkkSrQMsYGcu0BRb7rfztpMG3MhRAMlaBcAZIDWHnjvkudPSbTF7Zt8ZYyFAarRF8eRfgSBzmzSQo3JsYW5VYPJmTTc2/LQ321GQRJChvtiImAkhEbEnHi86JB4xxtEcX9n35m1lDtpCxtAbjJmsgQVliPHGG0JBKOz+dFYkdi2lrrOJdpqTq4U2jJZCg+C7CEiHZVBKWrHcSWo52hrIkNtTItuQANVN+0mBzBYoTplNmOBTDgEba3me7LK+yvxaNfIU6rjhx9qKGpFS2k4ocsQMxorIKb7TD5L1szg8BJUdSAYW4WmmR/UFuthpAkRwF0z8AlC2SKihjx1H6TfSuMqlG63sMKE5YePBAC4XvMPmALEhUwY5Q/F2+qoZS9LAqoBiqsICOHhJkgzVaX1nDHEDsnWJOsRqKKs4ut5yK2GtNUJmkr5p5bxVQxLruDCVyXNVTb+RLwWdSHHqzL5TyClZDUQ+TCQOdYT+WP3ptZiIVbVxX1VEDRXKtKqAEDuaGgTLwImlKjXQxn5UUgTeSez2UsLxnKqAMEWUszE0sRR2jpl6+bO8vd/CMt1DkPVNhV5gTItJMYksOPRt6k3xakj7224deWyiuNKy8UNu+PUxUgCI2aT+ffF6SRYrqt5gOiqKTtFAI0/gtsqWbtwvuy6L/GNRi0UKRBVm3wcgQFXpAIsl8g0SD9H1J9t/Hdd/roLhyQw0UEmBGhXdcDrtGDXaIPKLtl3T5ilRnwnRQFEHGoRBQubE6AAxasvOPtfk4lKi9nJXARPx8oC0UZX4oFO4Ux3JDatvDEpDZcucMOLU9v5i3GS2cSHsMgkNRdZICBSgIGZPz6nS8fCrmy6f+Pql8gcaO59PimcLj68PDw0QhOTHbGMp0+jB7BZpu6eFhVsoUb14X8d4HLGJsgENCfzWdfW2Ucw8d5VAUpaRk2bS02dw+TN6WccxYe1mvwpMc4VHDi6Io8NbmKBgWKdBAUR8HkaA4SzeOcgpG5r3hBUHgkXRASrEFORQsO7zhZrP0D27pZKUWil3qhxuRr7CopsDeKB7Docj2uCqQnYfdoZT/LEz7xCv86lTkx/YiSoWXqiTHdFBqZUXpSERZb9nxFgmx9TgIED9xUpXOd1fGyiBCt4AxFI+Cjx0Ls517EpjeeeoBuIpGORwUmiYXrufUphFPPR8aB7XHeT79Xl3K/ax9uaun7G9PjDG3nBrYl7gL8bY1vV+IltdBUfz2eiiGvR3qeuLXnOe2IjtY3pdqCDCFonXy5YYNoJRDmuv7ZdD6WFiDRMrA4OdnWiiysDSAooR+TTMsdUjkbs/RbrUBsbzDmkBRDiFaRo44ETlvY+JHufo0hWRZGkGh8slI8+NHPdlSaYYuBSUf4G2TR9KRfBNZCUJXzqzie6EVEikDpU27VqT04sbZyQwIGBPWSEJbkOKRX+sUY1XOeNw0Z8zPvaPkaNm1pJHNPc2LLdc9xbqHWCoz+eOSp6uHQrxxVoDhhK409O1ebFG21wLvjnhxWAGlhEULhRjAkOyIHEy8LYvLPltM2V54rhaAOFYllPx4WAulhAPEyyNq7nqfLaZsL1wPx3wK1VBg72c6GYFCjGEBB+BOxiFSZLrHFpNLONBTMxIlu1uCkp7bOwVKzT6R5Nku48iBGMhZ4mpHLEo1BlaLQOJ0FtKx35trORaLh1nMPo7DVCfL1RRxEUcRiIEcdu0YuVDppAk9NMuK8FzpfGnB4sAoFFpub9HIJ1EFY+okMlJcKWkKjzs5yXIRlsnUboLt0YNSFqgtV5GqiPISEscdKjWUVD7jbVPWlo8o71Mk3Aq2W0M+AtH7GbInNGEJEBZhxaAy8FZnKwlRWVDUcIsUkFhMLorW1Q8qaumGKSJSmsiX1F5npHVE5Lo4RKeXkMiRgNaYGmu55dx1Yn3hpJrM9FqJPiHyWiDxQlHxKExB2QL2g8nHz6Z5GVVOTomXvtrcNiBU9uyRKK5gA121epjbMznmCmJoilTn1xQ0KlHsefN//Nr2lOJ5Zd1IoTSSsZk6P8BSisgJL2dnS/Sewbo6EaFs9luvXvbFRRVPNvKm6chD8USu5XJijC3kKuiMVkZ6uER4MMWYM9E0vFzaFeX+slHlPXuV11qCIIjYciHvLROrM+Yi7zrO0p/fzzTTE/SwcuII+rV8/22N9JzTZuK70BDP2NvIEpwvlkz3gawkC2um6mHGeVKFYVfCF5peaj/AsASjc5xGSIJR3OL4GkmEff16LrcajW51Q52PNI+FxtrJoWzRnjKq3bupuJcJ7cEI5WYsDLRD6cSZtP2gIeXecInwfLvS1AmP87LBbuSh1waQkylRni5RbOxz1bwdYSOVfgJJ4VpYnqNq3UnkIO14GJPZ9x0xNfuMRBAulZuCpRkPC2fmhLGl7zusaO7hJ/isLFVkyBzfX7KsoZtIioCTbDNSSsKWDu3ln7a1vTaJxgGtl5GAOeymHELbzq35+Gi+59FwAA7h+8Z8f9sGKw44Luc35isrfEmGqy/zHaz7axpcgS8F/YzSPQdOPQ2L1ZyBuCJ5e3vJb0WKajoy/Lq5/UruSWYNSTA1N5cN4hawfK5Tzs9CfD0B/eF9ZR+DvZq4YeibU5Yh8bm7CW0mheCbDGfmzAH1dS+CYxc2lTc3HwMvGqfXiJx4XbgmAOG3E8fjc/6/8Sj5neePXvnhenS5ShcyMN952cVCPUEsE5dnfoFpVbCJJCkDpe5NVldjnocuj7XOWcYTiGqFpNjrPJNBgon5wNtZ4de9C9EILxYORc6EcAeZg+ERYj4S9ac2IfbMHFJC3TRLxddRjL5Mb6zACGP+iV1TqMcPYy028otJGjLO3JZ0VN47S1iRQmEP5lOa4qZ5AiAAZz4ReTaZpRqBhHnP/Gae62+mW++OrvmmAih8joGZQ0k2g/eYQhklA9jT6ppp4Vi5pvFQSGwAE8qiQ+fma5gwIxEBntzNbMqWLRAgpxvQ9bMorABFKIXpg1/I4kTcbqdQyNgoQSFGtrvP0xiw6gWZlCnu6t1eFgu+6XU57CKwnVYJlnR/zc1blroPdJnMjYTsy0zVgmvk/+poWOI3fX9jG2mjpFAydZtCIcs8XbMwz5tUhIn9O5tSYl5vR+S5nmI84fELp5OCJmZr8yHXL2Pzi38aOG6WFSpU6UlQhmbM92bJHmVQssFTrmxFytuYt8NaTRwkojjnaaNCbR0vo7zeatnI4cmVSz8HA9Cm+fCeEGTCeFos2YAFTVOGQt+mdjw3R2FRFyFQoL94C4UEtzxJWcMYEU3NTZczoniXikYQkU7SbUJinpN4BMWe2XFY2Ul+dJpAASsPUPgOLJ3elaHYoyUl8cZcFksSVSiCCqc6IsF/E1Yyhk8SlnjGQHFKpx48J7ZJhkgEijPmMbV8HMr2X/MVdzuZlUJJDiOSB34gQi1BCbhpoBPz3i2cIatQJhAuFrjC24xHNQcUYpKhOWfggk+kEJh6o1TNEpb4IP477LoEykRsgmx+MCqYJw4FoIY8aI3GMQNXhYVDqwCF+q/cIYlBZxQcUY2sbEqzEVcrq6ryORQ3T0lKMTABhZ4YzixH7PC8sIByv71xSRg/guE7FXST7zrRMIawOcvnc12Xd7vNbC+t7f0bDRRfkg37LVEvFVDAhLu8Lp5sI1Oa59/FhL3MjQRmPLDUbcm7BaMzsVNLa645L7jr6Ma8jC8OAcpNnoWk5pgX4xlPXB3mM9VAoVv1nLarvL8hBPpyIarJYYctM+NuJTISJbkwz50mp0Dg4MzSHbbJnTaYiUOJm/DqNhQ4xmQTCueQgEm6YelZHl2+C/wgB5dsqxw0UGDnJj8PU3MLprKqBnHI9Q5scMfjPEjNMJ0nu4daiVaL3FlixcGcrFlmWNKkHJgKfqvCSX2AuesOwU93HrfW/oal0aY9TdPp9iXsxNy70EGhb2uxtMTMuVJl7sFiPF2GyU1faJqwFIzeGNw8mnkMkbswYY+5zNqkhkNkWRloekLJrRnSILRSrpnijY0g9+SBA6MgjZzt7IwDdOs0zE0siGSxeNVONBil9m2ih+yvez4S/L6qguJZb5trftoBwgLGeproSFCvfhTB1k/6iizf3KyWy8UGdF1m8Iev5jo2Ih/QbR9wgC0GHk64yo8RAu4nLDnbYxLdm6sgWSr4cZUZ0hgU3yTMt44Xzswbfz6f++t0P4H1Xo+j8X1NvELYdDLhu8eB6GqxuE8cH+qsR++PX0/pYkWOtZiBhbycODkSJ7Kdh8fN5nzt8HPJHEt0/2VuHsb59lo/Qa9vAb+Nzu4X94IVdP70NJlm55Tr+8XiaZ3bzAimsbjn9JTKCBmvXq8fLx/cat+FxG4Sr4JkcqZm2yKJUNP/AihpCqhw7haJRjTiv0F0mPmZVAplqSChXrb9w+ZhLLsOmbbIp0S3lHeiyWeVaXtgog/RIuwavVjTMWcHf/uDpFCwy06cwIKWisR4+0MXepIwm5u+ZzRxFBMSCSDC2NVB4Q5D8W982IPXrOZs0ReO41CSfFd6vputiBYKr7ctOcz6tjtTzpaKynEESSLp+XFi9r6GdnpReYcJN+PgWb58zbVbjDAUS+mBnKAGSqBCOUJRdC7VujJ4HZTSlaDUS6uCUpj7caAUMtuaQmUR1ShUPqrOdphuEPCci5fR+eocAUoRC86XIaqNpabpr7ohpL/xsQ40fWmganlBDYs0k5QtOmFh5bsPnh71nlTAwpCzd1Qby5NOJEqj0vliFOUocI5zq8PIjudSxqin3OpbM4ju9ly94DOrJCpiyx4UQHG2hffJnHDoZScuPN3geZjYq6saJKYGOarhTC+9VXEUs7LtflyYpsNica9syK/COdj+stSnZIior1KxCDEq7zy95j8MFq9UPJekGTAQKSHL6iVYpB0aKy+BRVVPUB0IzNiqmrzEFmwySe3I2MuO/0hSZ1lGIhI9xz6chJF56qeEh6eAYkzw0ecLkgpRJxxHHhDvTbx1VmrKNeIxDKSKBiYQuq7YX8wFmeFXL9GnvzC2pE/LZXkwKykqLDcZH08Vq/MResvzjPxB9EamJf3YiGKWl+e6oVpU6BzBw29OaAmC1mAD/iCKxuMo8tRTauHEHFfoawgV/ep/gwxf+eAfSYqWCOZT7rRPGGZe/ymhUUt7Q8d36lHNYxPC3ZeWhTiCuUf0WRrOAvP122IRfZx2e3HCxaUVFk/xxk5EmqKw5li4j9Z2Sx6JNFgaSrGogj/sRec9SPOerPwcC/5tVP1W7r8mjey7+gL7nFRf/8SEvr1cz5g0Sm2A+J8SLjAVb3kn9/UqX8g+EZFIrfS0koeLcVc5CU9PbuNRIni06bjb8DFvml5+lMOvzhAxYhyMqDI0ssdmjGCYtKvcfqcmfR6AB5/peV8aWjtWV4yJhrJyyDpymO7F4i4RCUQ9SxUO/eW0rhEhAS+8xZN+XHB2rfY+CSXSzdzi3WHHckNeuv7/hCMjkaIJ8he/PO/fXSj4oR/6oR/6oR/6IYX+B48XBSDF066FAAAAAElFTkSuQmCC"
+                width="400" class="rounded-circle">
+            <h1 class="display-4">MRR</h1>
+            <p class="lead">Selamat Datang di Website MRR</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>About</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <p>Website kami ini adalah menjual kaos-kaos bola yang murah dengan harga yang terjangkau, serta kaos-kaos yang di impor langsung dari luar negeri dan bahan nya sangat nyaman untuk di pakai untuk di pakai serta harga nya sangat terjangkau.
+                    Ajak teman-teman kalian untuk mencoba membeli kaos ini, jika barang tidak sesuai pesanan bisa hubungi kontak kami yang ada di bawah ini. terima kasih sudah memesan kaos di toko kami. jangan memaksa bunda untuk membelikan nya menabunglah
+                    agar dapat membeli barang yang diinginkan. </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Portofolio</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="https://s3.bukalapak.com/img/3253064636/s-330-330/Jersey_Futsal_CUSTOM_Nama_Nomor_Keren_Tim_Bola_Kaos_Drifit_K.jpg.webp" alt="card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span class="border border-primary"></span>
+                            <table class="table table-borderless table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Ukuran</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>XL</td>
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>L</td>
+                                        <td>200.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">M</td>
+                                        <td>150.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td colspan="2">S</td>
+                                        <td>100.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="https://cf.shopee.co.id/file/cf8654e9ad438f902a815c4486933dca" alt="card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span class="border border-primary"></span>
+                            <table class="table table-borderless table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Ukuran</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>XL</td>
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>L</td>
+                                        <td>200.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">M</td>
+                                        <td>150.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td colspan="2">S</td>
+                                        <td>100.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="https://id-test-11.slatic.net/p/06591b20590e39d3d4adbd2bafd68a96.jpg" alt="card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span class="border border-primary"></span>
+                            <table class="table table-borderless table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Ukuran</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>XL</td>
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>L</td>
+                                        <td>200.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">M</td>
+                                        <td>150.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td colspan="2">S</td>
+                                        <td>100.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="https://s4.bukalapak.com/img/9093671011/large/Jersey_Voli__Jersey_Futsal__Setelan_Mizuno__Kostum_Baju_Bola.jpg" alt="card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span class="border border-primary"></span>
+                            <table class="table table-borderless table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Ukuran</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>XL</td>
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>L</td>
+                                        <td>200.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">M</td>
+                                        <td>150.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td colspan="2">S</td>
+                                        <td>100.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="https://cdn.elevenia.co.id/g/7/6/8/6/0/7/23768607_B.jpg" alt="card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span class="border border-primary"></span>
+                            <table class="table table-borderless table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Ukuran</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>XL</td>
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>L</td>
+                                        <td>200.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">M</td>
+                                        <td>150.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td colspan="2">S</td>
+                                        <td>100.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="https://s1.bukalapak.com/img/64554702342/large/data.jpeg" alt="card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span class="border border-primary"></span>
+                            <table class="table table-borderless table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Ukuran</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>XL</td>
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>L</td>
+                                        <td>200.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">M</td>
+                                        <td>150.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td colspan="2">S</td>
+                                        <td>100.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="https://cf.shopee.co.id/file/d0ba6195c448fb7dce9ff4042b834a6d_tn" alt="card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span class="border border-primary"></span>
+                            <table class="table table-borderless table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Ukuran</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>XL</td>
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>L</td>
+                                        <td>200.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">M</td>
+                                        <td>150.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td colspan="2">S</td>
+                                        <td>100.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="https://cf.shopee.co.id/file/67cb404922770c647c409917889a994b" alt="card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span class="border border-primary"></span>
+                            <table class="table table-borderless table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Ukuran</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>XL</td>
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>L</td>
+                                        <td>200.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">M</td>
+                                        <td>150.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td colspan="2">S</td>
+                                        <td>100.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="https://s3.bukalapak.com/img/8732184626/original/jersey_as_roma_grade_ori_baju_bola_roma_3rd_hitam_GO_jersey_.jpg" alt="card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span class="border border-primary"></span>
+                            <table class="table table-borderless table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Ukuran</th>
+                                        <th scope="col">Harga</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>XL</td>
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>L</td>
+                                        <td>200.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">M</td>
+                                        <td>150.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td colspan="2">S</td>
+                                        <td>100.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Contact</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    Hubungin kami melalui<br>
+                    <a href="https://www.instagram.com/imam_muniif_widaad"> Instagram</a><br>
+                    <a href="https://mail.google.com/imammuniif07@gmail.com"> Email</a><br>
+                    <a href="https://web.facebook.com/ImamMuniifWidaad">Facebook</a><br>
+                    <a href="https://web.whatsapp.com/">Whatsapp Imam</a><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
